@@ -1,0 +1,184 @@
+#messagePage_container {
+  display: flex;
+  height: 90vh;
+  position: relative;
+}
+
+#myChats_container {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  /* z-index: -1; */
+}
+
+.chat_items {
+  width: 90%;
+  height: 50px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.chat_name {
+  margin-left: 10px;
+  font-size: 18px;
+}
+.latest_message {
+  margin-left: 10px;
+  font-size: 13px;
+  color: rgb(136, 136, 136);
+}
+
+#chattingBox_container {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  /* z-index: -2; */
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#messages_box {
+  height: 92%;
+  position: relative;
+  overflow: hidden;
+}
+
+#message_pos {
+  position: absolute;
+  bottom: 10px;
+  width: 98%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.messageItem_box {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+#create_groupChat {
+  font-size: 23px;
+  display: flex;
+  width: 90%;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#create_groupChat button {
+  height: 25px;
+  cursor: pointer;
+  font-size: 13px;
+  background-color: rgb(232, 232, 232);
+  border: none;
+}
+
+.message_item {
+  margin-top: 2px;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: rgb(216, 216, 216);
+  border-radius: 10px;
+  max-width: 250px;
+  margin-right: 0;
+  /* float: right; */
+}
+
+#message_form {
+  width: 100%;
+  height: 8%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#message_form input {
+  border-radius: 7px;
+  width: 95%;
+  height: 30px;
+  border: none;
+  background-color: rgb(239, 239, 239);
+}
+
+
+
+#user_list {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.userList_item {
+  cursor: pointer;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  font-size: 20px;
+  background-color: rgb(242, 242, 242);
+  height: 50px;
+  border-radius: 5px;
+}
+.userList_item:hover {
+  background-color: rgb(228, 228, 228);
+
+}
+
+.userList_item > div {
+  margin-left: 20px;
+}
+
+
+#groupchat_container {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#groupchat_container input {
+  height: 25px;
+  width: 90%;
+}
+
+#groupSearchedUser_list {
+  margin-top: 15px;
+  width: 85%;
+}
+
+.searchedUser_item {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+#showJoined_users {
+  width: 95%;
+}
+
+.users_chip {
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid black;
+  font-size: 12px;
+  margin: 5px 0 0 5px;
+}

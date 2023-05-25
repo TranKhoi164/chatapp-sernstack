@@ -1,0 +1,11 @@
+FROM node:14-alpine 
+
+WORKDIR /trankhoi/chatapp
+
+COPY package*.json .
+COPY . .  
+
+RUN npm install
+EXPOSE 5001
+
+CMD ["npm", "start"]

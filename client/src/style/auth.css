@@ -1,0 +1,48 @@
+#container_auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#auth_block {
+  width: 400px;
+  height: 400px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login_box {
+  margin-top: 20px;
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+#input_form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+#input_form > .auth_input {
+  width: 60%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+#input_form > button {
+  width: 60%;
+  height: 30px;
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
